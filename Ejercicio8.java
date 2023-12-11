@@ -8,7 +8,7 @@
  * 
  * @author Fernando Lara Millan
  */
-public class prueba {
+public class Ejercicio8 {
     public static void main(String[] args) {
         int[] num = new int[100];
         int cont = 0;
