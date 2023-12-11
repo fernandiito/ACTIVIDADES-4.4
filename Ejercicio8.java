@@ -12,14 +12,14 @@ public class Ejercicio8 {
         int[] num = new int[100];
         double real = Double.parseDouble(System.console().readLine("Introduce un numero real entre 0.0 y 1.0: "));
         System.out.println("");
-        System.out.println("Los numeros entre " + 0.0 + " y tu numero " + real + " son:");
+        System.out.println("Los numeros iguales o mayores a tu numero son: ");
         System.out.println("");
         for (int i = 0; i < num.length; i++) {
             double numeroAleatorio = (double) (Math.random());
-            if (numeroAleatorio >= 0.0 && numeroAleatorio <= real) {
-                System.out.println(i+" :NUMERO ALEATORIO: "+numeroAleatorio);
-                System.out.println("");
+            if (numeroAleatorio >= real) {
+                int cont=0;
             }
+            system.out.println("Hay "+cont+" numeros iguales o mayores al que has introducido.");
         }
     }
 }
