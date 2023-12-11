@@ -10,16 +10,22 @@
 public class Ejercicio9 {
     public static void main(String[] args) {
         int[] num = new int[100];
+
+        for (int i = 0; i < num.length; i++) {
+            num[i] = (int) (1 + Math.random() * 10);
+        }
+
         int N = Integer.parseInt(System.console().readLine("Introduce un numero entre 1 y 10: "));
         System.out.println("");
-        System.out.println("Los numeros que coinciden con tun numero " + N + " son: ");
+        System.out.println("El numero " + N + " aparece en las siguientes posiciones: ");
         System.out.println("");
+
+        System.out.print("En la posicion: ");
         for (int i = 0; i < num.length; i++) {
-            double numeroAleatorio = (double) (Math.random() * 10 + 1);
-            if (numeroAleatorio == N) {
-                System.out.println(i + " :NUMERO ALEATORIO: " + numeroAleatorio);
-                System.out.println("");
+            if (num[i] == N) {
+                System.out.print(i + "  ");
             }
         }
+        System.out.println();
     }
 }
